@@ -4,12 +4,14 @@ var combo = ""
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowerCase = "abcdefghijklmnopqrstuvwxyz"
 var special = "!#$%&'*+,-./:;<=>?@[\]^_`~" 
+var nums = "1234567890"
 
 function password() {
    
    var sp = confirm("Do you want Special characters?")
    var lo = confirm("Do you want Lowercase characters?")
    var uo = confirm("Do you want Uppercase characters?")
+   var num = confirm("Do you want Numerical characters?")
     
     if (sp === true) {
         var choice1 = special.concat(upper)
@@ -28,8 +30,15 @@ function password() {
    } else {
        choice3 = ""
    }
+
+   if (num === true) {
+    var choice4 = nums.concat(upper)
+   } else {
+       choice4 = ""
+   }
    
-   var allChoices = combo.concat(choice2, choice3, choice1)
+   
+   var allChoices = combo.concat(choice2, choice3, choice1, choice4)
    
    console.log(allChoices)
    
