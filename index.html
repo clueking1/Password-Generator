@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Password Generator</title>
 </head>
 <body>
@@ -14,13 +15,28 @@
     <main>
         <div class="compscreen">
             
-            <img src="images/Untitled.png" alt="compscreen" height="600" width="600">
-        
-        
-            <button onclick = password()>Generate Password</button>
+            <img src="images/comp.png" alt="compscreen" height="600px" width="600px">
 
-            <button onclick=copyClip()>Copy text</button>
+            <div class="passdisplay">
+            <p  id= "p1">Click "Generate UNIQUE Password"</p>
+          
+            </div>
+
+            <div class="passbut">
+                <button onclick = password()>Generate UNIQUE Password</button>
+            </div>
+            
+
+            <div class="clipbut">
+                <button onclick="copyClip()">Copy text</button>
+            </div>
+
+            <input type="text" value="" id="myInput">
         </div>
+        
+      
+
+        
     </main>
 
     <footer>

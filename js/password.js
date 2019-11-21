@@ -64,23 +64,19 @@ function password() {
     return result;
     }
 
-    alert("This is your Password " + random(userInput))
+    //alert("This is your Password " + random(userInput))
+    document.getElementById("p1").innerHTML = random(userInput) 
+    document.getElementById("myInput").value = random(userInput - 8)
+    
     }
 
 }
 
 
 function copyClip() {
-   
-    var copyText = document.getElementById("myInput");
-  
-  
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); 
-  
-    
-    document.execCommand("copy");
-  
-   
-    alert("Copied the text: " + copyText.value);
-  }
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}

@@ -1,0 +1,57 @@
+
+
+
+.compscreen {
+    margin: auto;
+    width: 50%;
+    position: relative;
+
+   
+}
+
+.compscreen img {
+   z-index: -1;
+}
+
+.passbut {
+  float: left;
+  position:absolute;
+  margin-left: 108px;
+  bottom: 203px;
+ 
+
+}
+
+.clipbut {
+   float: left;
+  position:absolute;
+  margin-left: 385px;
+  bottom: 203px;
+}
+
+.passdisplay {
+   float: left;
+  position:absolute;
+  margin-left: 150px;
+  bottom: 392px;
+  max-width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+input {
+  display: none;
+}
+
+footer {
+  clear: both;
+  background-color: aqua;
+  bottom: 0;
+  width: 100%;
+  position: sticky;
+  padding: 1px;
+  text-align: center;
+  color: #8c5812
+
+
+}
