@@ -1,57 +1,60 @@
 
-
+body {
+  background-image: url(../images/dust_scratches.png);
+  z-index: -2;
+}
 
 .compscreen {
-    margin: auto;
-    width: 50%;
-    position: relative;
+  margin: auto;
+  width: 50%;
+  position: relative;
 
-   
+ 
 }
 
 .compscreen img {
-   z-index: -1;
+ z-index: -1;
 }
 
 .passbut {
-  float: left;
-  position:absolute;
-  margin-left: 108px;
-  bottom: 203px;
- 
+float: left;
+position:absolute;
+margin-left: 108px;
+bottom: 255px;
+
 
 }
 
 .clipbut {
-   float: left;
-  position:absolute;
-  margin-left: 385px;
-  bottom: 203px;
+ float: left;
+position:absolute;
+margin-left: 385px;
+bottom: 255px;
 }
 
 .passdisplay {
-   float: left;
-  position:absolute;
-  margin-left: 150px;
-  bottom: 392px;
-  max-width: 300px;
-  overflow: hidden;
-  text-align: center;
+ float: left;
+position:absolute;
+margin-left: 150px;
+bottom: 389px;
+max-width: 300px;
+overflow: hidden;
+text-align: center;
 }
+
+
+h1 {
+float: left;
+position:absolute;
+margin-left: 150px;
+bottom: 70px;
+max-width: 300px;
+overflow: hidden;
+text-align: center;
+}
+
+
 
 input {
-  display: none;
-}
-
-footer {
-  clear: both;
-  background-color: aqua;
-  bottom: 0;
-  width: 100%;
-  position: sticky;
-  padding: 1px;
-  text-align: center;
-  color: #8c5812
-
-
+display: none;
 }
