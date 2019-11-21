@@ -37,4 +37,25 @@ function password() {
        alert("You must choose atleast ONE Character!!!")
         return sp
   } 
+
+    var userInput = prompt("How long do you want your UNIQUE Password to be!?!?! Please choose between a character number between 8-128")
+    if (userInput < 8 || userInput > 128) {
+    alert("You picked a number outside of the allowed characters number! You must pick between 8 - 128! Please try again!")
+
+    }  else  {
+
+    console.log(userInput)
+    var result = ""
+
+    var upperLength = allChoices.length
+    function random(length) {
+    for ( var i = 0; i < length; i++)  {
+    result +=  allChoices.charAt(Math.floor(Math.random()* upperLength));
+    }
+    return result;
+    }
+
+    alert("This is your Password " + random(userInput))
+    }
+
 }
