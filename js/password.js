@@ -74,7 +74,11 @@ function password() {
 
 
 function copyClip() {
-  var copyText = document.getElementById("myInput");
+  
+    
+  
+  
+    var copyText = document.getElementById("myInput");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
